@@ -241,13 +241,19 @@ body {
     transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
 .hero-image {
+=======
+/* Robot Visual */
+.hero-visual {
+>>>>>>> parent of 225ac09 (Changed theme to medtach)
     display: flex;
     justify-content: center;
     align-items: center;
     animation: slideInRight 1s ease-out;
 }
 
+<<<<<<< HEAD
 .floating-card {
     width: 300px;
     height: 300px;
@@ -270,6 +276,164 @@ body {
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
+=======
+.robot-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.robot-figure {
+    position: relative;
+    z-index: 2;
+}
+
+.robot-head {
+    width: 120px;
+    height: 120px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+    box-shadow: var(--shadow-glow);
+    animation: robotHover 3s ease-in-out infinite;
+}
+
+.robot-eye {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: var(--text-primary);
+    border-radius: 50%;
+    top: 40px;
+    animation: eyeGlow 2s infinite alternate;
+}
+
+.left-eye { left: 30px; }
+.right-eye { right: 30px; }
+
+.robot-antenna {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 30px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+.robot-antenna::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--medical-green);
+    border-radius: 50%;
+    animation: antennaSignal 1.5s infinite;
+}
+
+.robot-body {
+    width: 150px;
+    height: 200px;
+    background: var(--light-bg);
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: var(--shadow-glow);
+}
+
+.chest-panel {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 60px;
+    background: var(--darker-bg);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+.chest-panel::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 2px;
+    background: var(--medical-green);
+    animation: heartbeat 1.5s infinite;
+}
+
+.arm {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    background: var(--light-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    top: 20px;
+}
+
+.left-arm {
+    left: -25px;
+    animation: armMove 4s infinite;
+}
+
+.right-arm {
+    right: -25px;
+    animation: armMove 4s infinite reverse;
+}
+
+.hologram-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(from 0deg, transparent, var(--primary-color), transparent);
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: hologramSpin 10s linear infinite;
+    z-index: 1;
+}
+
+@keyframes robotHover {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes eyeGlow {
+    0% { box-shadow: 0 0 5px var(--medical-green); }
+    100% { box-shadow: 0 0 15px var(--medical-green); }
+}
+
+@keyframes antennaSignal {
+    0% { box-shadow: 0 0 5px var(--medical-green); }
+    100% { box-shadow: 0 0 20px var(--medical-green); }
+}
+
+@keyframes heartbeat {
+    0%, 100% { width: 30px; opacity: 1; }
+    50% { width: 50px; opacity: 0.7; }
+}
+
+@keyframes armMove {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    75% { transform: rotate(15deg); }
+}
+
+@keyframes hologramSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+>>>>>>> parent of 225ac09 (Changed theme to medtach)
 }
 
 .scroll-indicator {
@@ -412,6 +576,7 @@ section {
     background: white;
 }
 
+<<<<<<< HEAD
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -433,11 +598,16 @@ section {
 .skill-category h3 {
     color: #333;
     margin-bottom: 1.5rem;
+=======
+/* Medical Device Animation */
+.about-visual {
+>>>>>>> parent of 225ac09 (Changed theme to medtach)
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
+<<<<<<< HEAD
 .skill-category h3 i {
     color: #667eea;
 }
@@ -479,6 +649,93 @@ section {
 }
 
 /* Experience Section */
+=======
+.medical-device-animation {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.device-frame {
+    width: 100%;
+    height: 100%;
+    background: var(--darker-bg);
+    border: 3px solid var(--medical-green);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    box-shadow: var(--shadow-medical);
+}
+
+.screen {
+    width: 100%;
+    height: 60%;
+    background: var(--dark-bg);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heartbeat-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--medical-green);
+    transform: translateY(-50%);
+}
+
+.heartbeat-line::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--medical-green);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: heartbeatPulse 1.5s infinite;
+}
+
+@keyframes heartbeatPulse {
+    0% { left: -20px; }
+    15% { left: 25%; transform: scaleY(3); }
+    30% { left: 50%; transform: scaleY(0.5); }
+    45% { left: 75%; transform: scaleY(2); }
+    100% { left: calc(100% + 20px); transform: scaleY(1); }
+}
+
+.control-panel {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.led-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+    opacity: 0.3;
+}
+
+.led-indicator.active {
+    background: var(--medical-green);
+    opacity: 1;
+    animation: ledBlink 2s infinite;
+}
+
+@keyframes ledBlink {
+    0%, 50% { box-shadow: 0 0 10px var(--medical-green); }
+    51%, 100% { box-shadow: 0 0 5px var(--medical-green); }
+}
+
+/* Experience Timeline */
+>>>>>>> parent of 225ac09 (Changed theme to medtach)
 .experience {
     background: #f8f9fa;
 }
@@ -925,6 +1182,44 @@ section {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
+<<<<<<< HEAD
+=======
+    
+    .robot-container {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .robot-head {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .robot-body {
+        width: 100px;
+        height: 130px;
+    }
+    
+    .bio-card,
+    .skill-category {
+        padding: 1.5rem;
+    }
+    
+    .communication-hub {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hub-center {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .ring-1 { width: 100px; height: 100px; }
+    .ring-2 { width: 140px; height: 140px; }
+    .ring-3 { width: 180px; height: 180px; }
+>>>>>>> parent of 225ac09 (Changed theme to medtach)
 }
 
 /* Loading Animation */
