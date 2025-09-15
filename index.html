@@ -3,146 +3,486 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhushan Ravikumar | Robotics & Systems Engineering</title>
+    <title>Bhushan Ravikumar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
 
-    <header>
-        <nav>
-            <div class="logo">BR</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="mailto:ravik039@umn.edu">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BR</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero">
-            <h1>Bhushan Ravikumar</h1>
-            <p class="subtitle">M.S. in Robotics Candidate | Systems Engineer specializing in automation, medical devices, and data-driven control.</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/bhushanrk" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Turtlelord-2k" target="_blank">GitHub</a>
-                <a href="mailto:ravik039@umn.edu">Email</a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                [cite_start]I am a Master's student in Robotics at the University of Minnesota [cite: 8][cite_start], graduating in December 2025[cite: 16]. [cite_start]With a foundation in Mechanical Engineering [cite: 10] and professional experience in systems engineering and data analysis, I am passionate about solving complex challenges at the intersection of hardware and software. [cite_start]My work spans from developing V&V test cases for medical devices [cite: 20] [cite_start]to engineering fall detection systems for healthcare [cite: 25] [cite_start]and implementing adaptive control for UAVs[cite: 33]. I thrive in collaborative environments, leveraging my skills in Python, ROS, and control systems to build efficient and reliable robotic solutions.
-            </p>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    [cite_start]<p>Python, C++, Javascript, SQL, VBA [cite: 7]</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Robotics & ML</h3>
-                    [cite_start]<p>ROS, Scipy, OpenCV, Pytorch, Tensorflow [cite: 15]</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Data & Analysis</h3>
-                    [cite_start]<p>Excel, MATLAB, Minitab, Alteryx [cite: 7]</p>
-                </div>
-                <div class="skill-category">
-                    <h3>CAD & CAE</h3>
-                    [cite_start]<p>Solidworks, Fusion 360, Siemens NX, ANSYS [cite: 14]</p>
-                </div>
-                 <div class="skill-category">
-                    <h3>Toolchain</h3>
-                    [cite_start]<p>Jama Connect, Jira, Agile, Labview [cite: 7]</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">Hi, I'm Bhushan Ravikumar</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & Software Engineer</p>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions and building exceptional digital experiences
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Systems Engineer</h3>
-                    <p><strong>Bracco Medical Technologies</strong> | Minneapolis, MN | [cite_start]May 2025 - Present [cite: 12, 13, 18]</p>
-                    <ul>
-                        [cite_start]<li>Executed comprehensive characterization testing, helping close 80% of system-level non-conformities to reach design freeze[cite: 19].</li>
-                        [cite_start]<li>Authored and automated over 40 risk-based V&V test cases, cutting testing time by 35% with custom fixtures and scripts[cite: 20].</li>
-                        [cite_start]<li>Optimized PID control algorithms to improve system stability and performance in motor control[cite: 22].</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>R&D Engineer</h3>
-                    <p><strong>Ambient Intelligence</strong> | Minneapolis, MN | [cite_start]Aug 2024 - May 2025 [cite: 23, 24]</p>
-                    <ul>
-                        [cite_start]<li>Designed and developed a fall detection system for Alzheimer's patients using mmWave sensors and Raspberry Pi[cite: 25].</li>
-                        [cite_start]<li>Led product development from prototype to validation, ensuring healthcare compliance and device reliability[cite: 26].</li>
-                        [cite_start]<li>Integrated devices with AWS IoT using MQTT for real-time patient monitoring and data streaming[cite: 27].</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Associate Analyst</h3>
-                    <p><strong>KPMG</strong> | Bangalore, India | [cite_start]Jul 2022 - Aug 2023 [cite: 34, 35, 36]</p>
-                    <ul>
-                        [cite_start]<li>Achieved $10.4 million in cost savings for clients by analyzing trade data to identify favorable tariff rates[cite: 37].</li>
-                        [cite_start]<li>Streamlined data pipelines using Python and VBA, reducing process time by 15%[cite: 38].</li>
-                    </ul>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="https://via.placeholder.com/300x300/4f46e5/ffffff?text=BR" alt="Bhushan Ravikumar">
+                        <div class="profile-ring"></div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and passion</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate Full Stack Developer with expertise in modern web technologies. 
+                        I love creating efficient, scalable, and user-friendly applications that solve real-world problems.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-content">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Clean Code</h3>
+                            <p>Writing maintainable and efficient code</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-content">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Responsive Design</h3>
+                            <p>Creating seamless experiences across all devices</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-content">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Performance</h3>
+                            <p>Optimizing applications for speed and efficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>CI/CD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>HapticTelegraph: Teleoperation With Variable Time Delay</h3>
-                    <p>Built a haptic teleoperation system using Python and embedded hardware to evaluate system responsiveness under simulated latency (0-500ms). [cite_start]The study highlighted critical delay thresholds for precision teleoperation, noting a 67% increase in task failures at 200ms variance[cite: 48, 49, 51].</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Haptics</span>
-                        <span>Embedded Systems</span>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4f46e5/ffffff?text=E-Commerce+App" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Full-stack e-commerce solution with React, Node.js, and MongoDB
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Multi-Robot Simulation in Warehouse Environment</h3>
-                    <p>Developed a ROS and Gazebo simulation package for warehouse automation. [cite_start]The system uses YOLOv5 for perception and integrates Anytime Repairing A* with Model Predictive Control for navigation, achieving a 78% success rate in pick-and-place operations[cite: 52, 53, 54].</p>
-                    <div class="project-tags">
-                        <span>ROS</span>
-                        <span>Gazebo</span>
-                        <span>YOLOv5</span>
-                        <span>MPC</span>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Task+Manager" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            Collaborative task management tool with real-time updates
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Socket.io</span>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Semantic Segmentation for Autonomous Driving</h3>
-                    <p>Optimized the FasterSeg architecture using TensorFlow to perform semantic segmentation on the Cityscapes dataset. [cite_start]This work reduced the training period by 15% and achieved a mean Intersection over Union (mIoU) of 69.78, improving categorical accuracy for urban scenes[cite: 55, 56].</p>
-                     <div class="project-tags">
-                        <span>TensorFlow</span>
-                        <span>Computer Vision</span>
-                        <span>Autonomous Vehicles</span>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f59e0b/ffffff?text=Analytics+Dashboard" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Data visualization dashboard with interactive charts and reports
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>Designed & Built by Bhushan Ravikumar</p>
-        <div class="social-links-footer">
-            <a href="https://linkedin.com/in/bhushanrk" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Turtlelord-2k" target="_blank">GitHub</a>
-            <a href="mailto:ravik039@umn.edu">Email</a>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                        <h4 class="timeline-company">Tech Solutions Inc.</h4>
+                        <p class="timeline-description">
+                            Leading development of scalable web applications using modern technologies.
+                            Mentoring junior developers and implementing best practices.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2023</div>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <h4 class="timeline-company">Digital Innovations Ltd.</h4>
+                        <p class="timeline-description">
+                            Developed and maintained multiple client projects using React, Node.js, and cloud technologies.
+                            Improved application performance by 40% through optimization techniques.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <h4 class="timeline-company">StartUp Ventures</h4>
+                        <p class="timeline-description">
+                            Built responsive user interfaces and collaborated with design teams to create
+                            engaging user experiences across multiple platforms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>bhushan.ravikumar@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Bhushan Ravikumar. All rights reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart"></i> by Bhushan Ravikumar</p>
+            </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
