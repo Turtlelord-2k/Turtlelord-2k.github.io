@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://turtlelord-2k.github.io/sitemap.xml

@@ -3,82 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Bhushan Ravikumar - Robotics Engineer & Systems Developer</title>
-    <meta name="description" content="Portfolio of Bhushan Ravikumar - Systems Engineer and Robotics graduate student specializing in AI, medical technology, and intelligent systems.">
-    <meta name="keywords" content="robotics, systems engineer, AI, machine learning, medical technology, python, cpp, matlab, ros">
-=======
     <title>Bhushan Ravikumar - Robotics & Medical Device Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio of Bhushan Ravikumar - Robotics Engineer specializing in Medical Devices and Autonomous Systems">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    
-    <!-- Meta tags for better SEO and social sharing -->
-    <meta name="description" content="Bhushan Ravikumar - Robotics & Medical Device Engineer specializing in systems engineering, R&D, and innovative technology solutions.">
-    <meta name="keywords" content="robotics, medical devices, systems engineer, R&D, Python, ROS, MATLAB, SolidWorks, automation">
->>>>>>> parent of 225ac09 (Changed theme to medtach)
-    <meta name="author" content="Bhushan Ravikumar">
-    <meta name="robots" content="index, follow">
-    
-<<<<<<< HEAD
-    <!-- Open Graph / Facebook -->
-=======
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Bhushan Ravikumar - Robotics & Medical Device Engineer">
-    <meta property="og:description" content="Portfolio showcasing expertise in robotics, medical device development, and innovative engineering solutions.">
->>>>>>> parent of 225ac09 (Changed theme to medtach)
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://turtlelord-2k.github.io/">
-    <meta property="og:title" content="Bhushan Ravikumar - Robotics Engineer & Systems Developer">
-    <meta property="og:description" content="Portfolio of Bhushan Ravikumar - Systems Engineer and Robotics graduate student specializing in AI, medical technology, and intelligent systems.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=Bhushan+Ravikumar">
-    
-<<<<<<< HEAD
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://turtlelord-2k.github.io/">
-    <meta property="twitter:title" content="Bhushan Ravikumar - Robotics Engineer & Systems Developer">
-    <meta property="twitter:description" content="Portfolio of Bhushan Ravikumar - Systems Engineer and Robotics graduate student specializing in AI, medical technology, and intelligent systems.">
-    <meta property="twitter:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=Bhushan+Ravikumar">
-=======
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bhushan Ravikumar - Robotics & Medical Device Engineer">
-    <meta name="twitter:description" content="Portfolio showcasing expertise in robotics, medical device development, and innovative engineering solutions.">
->>>>>>> parent of 225ac09 (Changed theme to medtach)
-    
-    <!-- PWA -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#667eea">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="BR Portfolio">
-    <link rel="apple-touch-icon" href="https://via.placeholder.com/192x192/667eea/ffffff?text=BR">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
     
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-<<<<<<< HEAD
-                <a href="#home">BR</a>
-=======
-                <i class="fas fa-robot"></i>
-                <span>BR</span>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">BR</span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -86,7 +33,7 @@
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -96,262 +43,129 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="particles-container">
-            <canvas id="particles"></canvas>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="typing-text">Hi, I'm Bhushan Ravikumar</span>
-                </h1>
-                <h2 class="hero-subtitle">Robotics Engineer & Systems Developer</h2>
-                <p class="hero-description">
-<<<<<<< HEAD
-                    Passionate about creating intelligent systems that bridge the gap between 
-                    robotics, AI, and real-world applications. Currently pursuing MS in Robotics 
-                    at University of Minnesota.
-=======
-                    Pioneering the future of robotics and medical devices through innovative engineering solutions
->>>>>>> parent of 225ac09 (Changed theme to medtach)
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Bhushan</span>
+                        <span class="title-line">Ravikumar</span>
+                    </h1>
+                    <p class="hero-subtitle">Robotics & Medical Device Engineer</p>
+                    <p class="hero-description">
+                        Specializing in autonomous systems, medical device development, 
+                        and cutting-edge robotics solutions that bridge technology and healthcare.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="Bhushan_Ravikumar_Resume_MD.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Resume
+                        </a>
+                    </div>
                 </div>
-            </div>
-<<<<<<< HEAD
-            <div class="hero-image">
-                <div class="floating-card">
-                    <i class="fas fa-robot"></i>
-=======
-            <div class="hero-visual" data-aos="fade-left">
-                <div class="robot-container">
-                    <div class="robot-figure">
-                        <div class="robot-head">
-                            <div class="robot-eye left-eye"></div>
-                            <div class="robot-eye right-eye"></div>
-                            <div class="robot-antenna"></div>
-                        </div>
+                <div class="hero-visual">
+                    <div class="robot-container">
                         <div class="robot-body">
-                            <div class="chest-panel"></div>
-                            <div class="arm left-arm"></div>
-                            <div class="arm right-arm"></div>
+                            <div class="robot-head">
+                                <div class="robot-eye left-eye"></div>
+                                <div class="robot-eye right-eye"></div>
+                                <div class="robot-antenna"></div>
+                            </div>
+                            <div class="robot-torso">
+                                <div class="robot-panel"></div>
+                                <div class="robot-buttons">
+                                    <div class="robot-button"></div>
+                                    <div class="robot-button"></div>
+                                    <div class="robot-button"></div>
+                                </div>
+                            </div>
+                            <div class="robot-arms">
+                                <div class="robot-arm left-arm"></div>
+                                <div class="robot-arm right-arm"></div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element" data-speed="2">⚕️</div>
+                            <div class="floating-element" data-speed="3">🔬</div>
+                            <div class="floating-element" data-speed="1.5">🤖</div>
+                            <div class="floating-element" data-speed="2.5">⚙️</div>
+                            <div class="floating-element" data-speed="1.8">🧬</div>
                         </div>
                     </div>
-                    <div class="hologram-effect"></div>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-<<<<<<< HEAD
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Bridging Robotics and Healthcare Innovation</p>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        I'm a Systems Engineer and Robotics graduate student with a passion for developing 
-                        innovative solutions in robotics, AI, and medical technology. With experience spanning 
-                        from medical device testing to fall detection systems for healthcare, I bring a 
-                        multidisciplinary approach to complex engineering challenges.
-                    </p>
-                    <p>
-                        Currently working at Bracco Medical Technologies, I've contributed to closing 80% of 
-                        system-level non-conformities and automated 40+ test cases, while pursuing my 
-                        Master's in Robotics at the University of Minnesota.
-                    </p>
-                    <div class="education">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
                         <div class="education-item">
-                            <h4>Master of Science in Robotics</h4>
+                            <h4>Masters of Science in Robotics</h4>
                             <p>University of Minnesota, Twin Cities</p>
-                            <span>Expected Dec 2025</span>
+                            <span class="date">Dec 2025</span>
                         </div>
                         <div class="education-item">
                             <h4>Bachelor of Technology in Mechanical Engineering</h4>
                             <p>PES University</p>
-                            <span>May 2022</span>
+                            <span class="date">May 2022</span>
                         </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Current Role</h3>
+                        <p>
+                            Currently working as a <strong>Systems Engineer</strong> at Bracco Medical Technologies, 
+                            where I execute comprehensive characterization testing for contrast-delivery platforms 
+                            and engineer closed-loop reliability systems for next-generation medical devices.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Passion</h3>
+                        <p>
+                            I'm passionate about developing autonomous systems that enhance healthcare delivery, 
+                            from haptic teleoperation systems for surgical robots to fall detection systems 
+                            for patient monitoring. My work focuses on the intersection of robotics, 
+                            AI, and medical technology.
+                        </p>
                     </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
                         <div class="stat-number" data-target="100">0</div>
                         <div class="stat-label">Tests Executed</div>
-=======
-            <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-user-astronaut"></i>
-                About Me
-            </h2>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <div class="bio-card">
-                        <h3>Robotics & Medical Device Engineer</h3>
-                        <p>
-                            I'm a passionate Systems Engineer specializing in robotics and medical device development. 
-                            Currently pursuing my Master's in Robotics at the University of Minnesota, I bring a unique 
-                            blend of mechanical engineering expertise and cutting-edge technology innovation.
-                        </p>
-                        <p>
-                            My experience spans from developing fall detection systems for Alzheimer's patients to 
-                            optimizing PID control algorithms for medical contrast-delivery platforms. I'm driven by 
-                            the mission to create technology that improves lives and pushes the boundaries of what's possible.
-                        </p>
-                        <div class="stats-container">
-                            <div class="stat-item">
-                                <span class="stat-number" data-target="100">0</span>
-                                <span class="stat-label">Tests Executed</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number" data-target="80">0</span>
-                                <span class="stat-label">% Non-conformities Closed</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number" data-target="10.4">0</span>
-                                <span class="stat-label">Million $ Saved</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual" data-aos="fade-left">
-                    <div class="medical-device-animation">
-                        <div class="device-frame">
-                            <div class="screen">
-                                <div class="heartbeat-line"></div>
-                            </div>
-                            <div class="control-panel">
-                                <div class="led-indicator active"></div>
-                                <div class="led-indicator"></div>
-                                <div class="led-indicator active"></div>
-                            </div>
-                        </div>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
                     </div>
                     <div class="stat-item">
                         <div class="stat-number" data-target="80">0</div>
                         <div class="stat-label">% Non-conformities Closed</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" data-target="10.4">0</div>
-                        <div class="stat-label">Million $ Cost Savings</div>
-                    </div>
-<<<<<<< HEAD
-                    <div class="stat-item">
                         <div class="stat-number" data-target="35">0</div>
                         <div class="stat-label">% Testing Time Reduced</div>
-=======
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="company-logo">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <h3>Research Assistant</h3>
-                        <h4>University of Minnesota</h4>
-                        <span class="timeline-date">Jan 2025 – May 2025</span>
-                        <ul>
-                            <li>Designed and developed a test bench with embedded hardware for UAV engines</li>
-                            <li>Implemented system identification and adaptive control algorithms in MATLAB</li>
-                        </ul>
                     </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="company-logo">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Associate Analyst</h3>
-                        <h4>KPMG</h4>
-                        <span class="timeline-date">Jul 2022 – Aug 2023</span>
-                        <ul>
-                            <li>Analyzed large-scale trade data achieving $10.4 million in cost savings</li>
-                            <li>Led cross-functional initiative to streamline data pipelines reducing process time by 15%</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-rocket"></i>
-                Featured Projects
-            </h2>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-hand-paper"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>HapticTelegraph Teleoperation</h3>
-                        <p>Built a haptic teleoperation system with simulated delay for surgical robots, achieving critical insights into delay thresholds for precision operations.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Embedded Hardware</span>
-                            <span>Haptic Control</span>
-                        </div>
-                        <div class="project-stats">
-                            <span><i class="fas fa-clock"></i> 0-500ms Variance</span>
-                            <span><i class="fas fa-vial"></i> 30+ Trials</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-warehouse"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Multi-Robot Warehouse Simulation</h3>
-                        <p>Developed a comprehensive simulation package in ROS and Gazebo with YOLO v5 for object perception and advanced path planning algorithms.</p>
-                        <div class="project-tech">
-                            <span>ROS</span>
-                            <span>Gazebo</span>
-                            <span>YOLO v5</span>
-                            <span>A* Algorithm</span>
-                        </div>
-                        <div class="project-stats">
-                            <span><i class="fas fa-percentage"></i> 78% Success Rate</span>
-                            <span><i class="fas fa-robot"></i> Multi-Robot System</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-car"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Semantic Segmentation for Autonomous Driving</h3>
-                        <p>Optimized FasterSeg architecture for urban scene segmentation, improving training efficiency and achieving high categorical accuracy.</p>
-                        <div class="project-tech">
-                            <span>TensorFlow</span>
-                            <span>Computer Vision</span>
-                            <span>Deep Learning</span>
-                        </div>
-                        <div class="project-stats">
-                            <span><i class="fas fa-tachometer-alt"></i> 69.78 mIoU</span>
-                            <span><i class="fas fa-clock"></i> 15% Faster Training</span>
-                        </div>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10.4">0</div>
+                        <div class="stat-label">Million $ Cost Savings</div>
                     </div>
                 </div>
             </div>
@@ -361,163 +175,132 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-<<<<<<< HEAD
-            <h2 class="section-title">Skills & Technologies</h2>
-=======
-            <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-cogs"></i>
-                Technical Arsenal
-            </h2>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Tools and Technologies I Work With</p>
+            </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>Python</span>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>C++</span>
+                            <span class="skill-name">JavaScript</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>JavaScript</span>
+                            <span class="skill-name">SQL</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="80%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <span>SQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-
-<<<<<<< HEAD
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> Robotics & AI</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>ROS</span>
-=======
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-header">
+                    <div class="category-header">
                         <i class="fas fa-robot"></i>
                         <h3>Robotics & AI</h3>
                     </div>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>ROS</span>
+                            <span class="skill-name">ROS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OpenCV</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cog"></i>
+                        <h3>Engineering Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MATLAB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SolidWorks</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>OpenCV</span>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
+                            <span class="skill-name">ANSYS</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-<<<<<<< HEAD
-                            <span>OpenCV</span>
-=======
-                            <span>PyTorch</span>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
+                            <span class="skill-name">LabVIEW</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-<<<<<<< HEAD
-                            <span>PyTorch</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>TensorFlow</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70%"></div>
+                                <div class="skill-progress" data-width="87%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Engineering Tools</h3>
+                    <div class="category-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Project Management</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span>MATLAB</span>
+                            <span class="skill-name">Jama Connect</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>SolidWorks</span>
+                            <span class="skill-name">Jira</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Agile</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>ANSYS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>LabVIEW</span>
-=======
-                            <span>TensorFlow</span>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<<<<<<< HEAD
-                <div class="skill-category">
-                    <h3><i class="fas fa-project-diagram"></i> Development Tools</h3>
-=======
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-header">
-                        <i class="fas fa-cube"></i>
-                        <h3>CAD & Engineering</h3>
-                    </div>
->>>>>>> parent of 225ac09 (Changed theme to medtach)
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>Jama Connect</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Jira</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Agile</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>AWS IoT</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70%"></div>
                             </div>
                         </div>
                     </div>
@@ -529,73 +312,97 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My Journey in Robotics and Medical Technology</p>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-item" data-date="May 2025 – Present">
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">May 2025 – Present</div>
+                        <div class="company-logo">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
                         <h3>Systems Engineer</h3>
-                        <h4>Bracco Medical Technologies, Minneapolis, MN</h4>
-                        <ul>
+                        <h4>Bracco Medical Technologies</h4>
+                        <p class="location">Minneapolis, MN</p>
+                        <ul class="achievements">
                             <li>Executed comprehensive characterization testing for contrast-delivery platforms, ran 100+ bench and simulated-use tests</li>
-                            <li>Authored and automated 40+ risk-based System & System-Software V&V test cases</li>
+                            <li>Authored and automated 40+ risk-based System & System-Software V&V test cases (20% of program's total coverage)</li>
                             <li>Engineered a closed-loop reliability rig to generate high-resolution lifecycle data</li>
                             <li>Optimized PID control algorithms improving system stability and performance</li>
                         </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LabVIEW</span>
+                            <span class="tech-tag">Jama Connect</span>
+                            <span class="tech-tag">PID Control</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                
+                <div class="timeline-item" data-date="Aug 2024 – May 2025">
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Aug 2024 – May 2025</div>
+                        <div class="company-logo">
+                            <i class="fas fa-brain"></i>
+                        </div>
                         <h3>R&D Engineer</h3>
-                        <h4>Ambient Intelligence, Minneapolis, MN</h4>
-                        <ul>
-                            <li>Designed and developed a fall detection system for Alzheimer's patients using mmWave sensors</li>
+                        <h4>Ambient Intelligence</h4>
+                        <p class="location">Minneapolis, MN</p>
+                        <ul class="achievements">
+                            <li>Designed fall detection system for Alzheimer's patients using mmWave sensors and Raspberry Pi</li>
                             <li>Led product development from prototype to testing with 3D-printed enclosures</li>
-                            <li>Integrated multiple devices to communicate with AWS IoT using MQTT</li>
+                            <li>Integrated multiple devices with AWS IoT using MQTT for real-time monitoring</li>
                         </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">mmWave Sensors</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">AWS IoT</span>
+                            <span class="tech-tag">MQTT</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                
+                <div class="timeline-item" data-date="Jan 2025 – May 2025">
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jan 2025 – May 2025</div>
+                        <div class="company-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
                         <h3>Research Assistant</h3>
-                        <h4>University of Minnesota, Minneapolis, MN</h4>
-                        <ul>
-                            <li>Designed and developed a test bench with embedded hardware for UAV engines</li>
+                        <h4>University of Minnesota</h4>
+                        <p class="location">Minneapolis, MN</p>
+                        <ul class="achievements">
+                            <li>Designed test bench with embedded hardware for data-driven control of UAV engines</li>
                             <li>Implemented system identification and adaptive control algorithms in MATLAB</li>
                         </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">UAV Systems</span>
+                            <span class="tech-tag">Control Systems</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                
+                <div class="timeline-item" data-date="Jul 2022 – Aug 2023">
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jul 2022 – Aug 2023</div>
+                        <div class="company-logo">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                         <h3>Associate Analyst</h3>
-                        <h4>KPMG, Bangalore, India</h4>
-                        <ul>
+                        <h4>KPMG</h4>
+                        <p class="location">Bangalore, India</p>
+                        <ul class="achievements">
                             <li>Analyzed large-scale trade data achieving $10.4 million in cost savings</li>
                             <li>Led cross-functional initiative reducing process time by 15%</li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Sept 2021 – Dec 2021</div>
-                        <h3>Mechanical Engineer Intern</h3>
-                        <h4>Moog Inc., Bangalore, India</h4>
-                        <ul>
-                            <li>Conducted rigorous Qualification and Acceptance testing for Geared Rotary Motor</li>
-                            <li>Managed execution of Inboard Aileron Servo Control endurance test</li>
-                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Excel/VBA</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -605,83 +412,94 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative Solutions in Robotics and AI</p>
+            </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <i class="fas fa-hand-paper"></i>
-                        </div>
+                    <div class="project-icon">
+                        <i class="fas fa-hand-paper"></i>
                     </div>
                     <div class="project-content">
                         <h3>HapticTelegraph Teleoperation</h3>
-                        <p>Built a haptic teleoperation system with simulated delay for surgical robots using Python and embedded hardware.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Embedded Systems</span>
-                            <span>Haptic Control</span>
+                        <p class="project-subtitle">Surgical Robot Control System</p>
+                        <p class="project-description">
+                            Built a haptic teleoperation system with simulated delay (0–500ms variance) 
+                            for surgical robots. Evaluated system responsiveness across 30+ trials 
+                            to determine critical delay thresholds for precision operations.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">67%</span>
+                                <span class="metric-label">Failure Increase at 200ms</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">0.3s</span>
+                                <span class="metric-label">Peak Latency Threshold</span>
+                            </div>
                         </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <span class="number">30+</span>
-                                <span class="label">Trials Conducted</span>
-                            </div>
-                            <div class="stat">
-                                <span class="number">67%</span>
-                                <span class="label">Failure Increase at 200ms</span>
-                            </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Embedded Systems</span>
+                            <span class="tech-tag">Haptic Control</span>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <i class="fas fa-warehouse"></i>
-                        </div>
+                    <div class="project-icon">
+                        <i class="fas fa-warehouse"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Multi-Robot Warehouse Simulation</h3>
-                        <p>Developed a simulation package in ROS and Gazebo with YOLO v5 for object perception and efficient navigation.</p>
-                        <div class="project-tech">
-                            <span>ROS</span>
-                            <span>Gazebo</span>
-                            <span>YOLO v5</span>
-                            <span>A* Algorithm</span>
-                        </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <span class="number">78%</span>
-                                <span class="label">Success Rate</span>
+                        <h3>Multi-Robot Warehouse System</h3>
+                        <p class="project-subtitle">Autonomous Navigation & Manipulation</p>
+                        <p class="project-description">
+                            Developed a comprehensive simulation package in ROS and Gazebo, 
+                            incorporating YOLO v5 for object perception and advanced path planning 
+                            algorithms for efficient warehouse operations.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">78%</span>
+                                <span class="metric-label">Navigation Success Rate</span>
                             </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">ROS</span>
+                            <span class="tech-tag">Gazebo</span>
+                            <span class="tech-tag">YOLO v5</span>
+                            <span class="tech-tag">A* Algorithm</span>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <i class="fas fa-car"></i>
-                        </div>
+                    <div class="project-icon">
+                        <i class="fas fa-car"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Semantic Segmentation for Autonomous Driving</h3>
-                        <p>Optimized FasterSeg architecture for semantic segmentation of urban scenes using TensorFlow.</p>
-                        <div class="project-tech">
-                            <span>TensorFlow</span>
-                            <span>Computer Vision</span>
-                            <span>Deep Learning</span>
-                            <span>Cityscapes Dataset</span>
+                        <h3>Autonomous Driving Segmentation</h3>
+                        <p class="project-subtitle">Urban Scene Understanding</p>
+                        <p class="project-description">
+                            Optimized FasterSeg architecture for semantic segmentation of urban scenes 
+                            in autonomous vehicles. Achieved significant improvements in training 
+                            efficiency and categorical accuracy.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">69.78</span>
+                                <span class="metric-label">mIoU Score</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">15%</span>
+                                <span class="metric-label">Training Time Reduction</span>
+                            </div>
                         </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <span class="number">69.78</span>
-                                <span class="label">mIoU Score</span>
-                            </div>
-                            <div class="stat">
-                                <span class="number">15%</span>
-                                <span class="label">Training Time Reduced</span>
-                            </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Cityscapes Dataset</span>
                         </div>
                     </div>
                 </div>
@@ -692,46 +510,51 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to collaborate on the next breakthrough in robotics and medical technology</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, innovative projects, or potential collaborations in robotics and systems engineering.</p>
-                    
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>763-528-1061</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>ravik039@umn.edu</p>
-                            </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:ravik039@umn.edu">ravik039@umn.edu</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+17635281061">763-528-1061</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p>linkedin.com/in/bhushanrk</p>
-                            </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/bhushanrk" target="_blank">linkedin.com/in/bhushanrk</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p>github.com/Turtlelord-2k</p>
-                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Turtlelord-2k" target="_blank">github.com/Turtlelord-2k</a>
                         </div>
                     </div>
                 </div>
-                
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contact-form">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
@@ -744,7 +567,10 @@
                         <div class="form-group">
                             <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
@@ -756,30 +582,11 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Bhushan Ravikumar. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/bhushanrk" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Turtlelord-2k" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:ravik039@umn.edu"><i class="fas fa-envelope"></i></a>
-                </div>
+                <p>Bridging Robotics and Healthcare Innovation</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    
-    <!-- Service Worker Registration -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then((registration) => {
-                        console.log('SW registered: ', registration);
-                    })
-                    .catch((registrationError) => {
-                        console.log('SW registration failed: ', registrationError);
-                    });
-            });
-        }
-    </script>
 </body>
 </html>

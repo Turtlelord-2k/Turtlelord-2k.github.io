@@ -1,57 +1,70 @@
 # Bhushan Ravikumar - Portfolio Website
 
-A modern, animated portfolio website showcasing my work as a Robotics Engineer and Systems Developer.
+A modern, animated portfolio website showcasing expertise in Robotics and Medical Device Engineering.
 
-## 🚀 Features
+## 🤖 Features
 
-- **Modern Design**: Clean, professional layout with smooth animations
-- **Responsive**: Fully responsive design that works on all devices
-- **Interactive Animations**: Particle system, scroll-triggered animations, and smooth transitions
-- **Performance Optimized**: Fast loading with optimized assets
-- **SEO Friendly**: Proper meta tags and semantic HTML structure
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Light Theme**: Clean, professional medical/robotics inspired design
+- **Interactive Animations**: Smooth scrolling, robot animations, and scroll-triggered effects
+- **Accessibility**: WCAG compliant with keyboard navigation and screen reader support
+- **Performance Optimized**: Fast loading with efficient animations
+- **GitHub Pages Ready**: Configured for seamless deployment
 
 ## 🛠️ Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Animations**: CSS animations, JavaScript particle system
-- **Responsive Design**: CSS Grid, Flexbox
-- **Icons**: Font Awesome
-- **Fonts**: Google Fonts (Poppins)
+- **HTML5**: Semantic markup with accessibility features
+- **CSS3**: Modern styling with CSS Grid, Flexbox, and animations
+- **JavaScript (ES6+)**: Interactive functionality and smooth animations
+- **Font Awesome**: Professional icons
+- **Google Fonts**: Inter and JetBrains Mono typography
+
+## 🎨 Design Theme
+
+The website features a light theme with robotics and medical device aesthetics:
+- Clean, professional layout
+- Animated robot character in hero section
+- Medical/tech color palette (blues, teals, greens)
+- Smooth animations and micro-interactions
+- Floating elements representing medical and tech symbols
 
 ## 📱 Sections
 
-1. **Hero**: Animated introduction with particle background
-2. **About**: Personal information and education
-3. **Skills**: Interactive skill bars with different categories
-4. **Experience**: Timeline of professional experience
-5. **Projects**: Featured projects with hover effects
-6. **Contact**: Contact form and social links
+1. **Hero**: Animated introduction with robot character
+2. **About**: Education, current role, and key statistics
+3. **Skills**: Technical skills with animated progress bars
+4. **Experience**: Professional timeline with achievements
+5. **Projects**: Featured projects with metrics and technologies
+6. **Contact**: Contact information and form
 
-## 🎨 Animations
+## 🚀 Deployment
 
-- Particle system with mouse interaction
-- Typing animation for hero text
-- Scroll-triggered animations for sections
-- Counter animations for statistics
-- Skill bar progress animations
-- Hover effects on cards and buttons
-- Mobile-friendly hamburger menu
+This website is optimized for GitHub Pages deployment:
 
-## 📧 Contact
+1. Push to your GitHub repository
+2. Go to Settings → Pages
+3. Select source branch (usually `main`)
+4. Your site will be available at `https://yourusername.github.io/repository-name`
+
+## 📄 Resume
+
+The website includes a direct link to download the resume PDF: `Bhushan_Ravikumar_Resume_MD.pdf`
+
+## 🎯 Key Highlights
+
+- **Systems Engineer** at Bracco Medical Technologies
+- **MS in Robotics** from University of Minnesota
+- Expertise in medical device testing, robotics, and AI
+- $10.4M cost savings achieved in previous roles
+- 100+ tests executed with 80% non-conformity closure rate
+
+## 📞 Contact
 
 - **Email**: ravik039@umn.edu
 - **Phone**: 763-528-1061
 - **LinkedIn**: [linkedin.com/in/bhushanrk](https://linkedin.com/in/bhushanrk)
 - **GitHub**: [github.com/Turtlelord-2k](https://github.com/Turtlelord-2k)
 
-## 🚀 Deployment
-
-This website is deployed using GitHub Pages. The site is automatically built and deployed when changes are pushed to the main branch.
-
-## 📄 License
-
-© 2025 Bhushan Ravikumar. All rights reserved.
-
 ---
 
-*Built with ❤️ using modern web technologies*
+Built with ❤️ and lots of ☕ by Bhushan Ravikumar
