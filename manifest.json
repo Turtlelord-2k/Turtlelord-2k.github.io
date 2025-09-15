@@ -1,0 +1,25 @@
+{
+    "name": "Bhushan Ravikumar - Portfolio",
+    "short_name": "BR Portfolio",
+    "description": "Portfolio website of Bhushan Ravikumar - Robotics & Medical Device Engineer",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#00d4ff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjMGEwYTBhIi8+CjxjaXJjbGUgY3g9Ijk2IiBjeT0iNzAiIHI9IjMwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8cmVjdCB4PSI3NiIgeT0iMTEwIiB3aWR0aD0iNDAiIGhlaWdodD0iNTAiIHJ4PSI1IiBmaWxsPSIjMWExYTFhIiBzdHJva2U9IiMwMGQ0ZmYiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSI4NSIgY3k9IjY1IiByPSIzIiBmaWxsPSIjZmZmZmZmIi8+CjxjaXJjbGUgY3g9IjEwNyIgY3k9IjY1IiByPSIzIiBmaWxsPSIjZmZmZmZmIi8+CjxyZWN0IHg9Ijg2IiB5PSIxMzAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxNSIgcng9IjMiIGZpbGw9IiMwNTA1MDUiIHN0cm9rZT0iIzRlY2RjNCIgc3Ryb2tlLXdpZHRoPSIxIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwZDRmZiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0ZWNkYzQiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBmaWxsPSIjMGEwYTBhIi8+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjE4MCIgcj0iODAiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxyZWN0IHg9IjE5NiIgeT0iMjkwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE0MCIgcng9IjE1IiBmaWxsPSIjMWExYTFhIiBzdHJva2U9IiMwMGQ0ZmYiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSIyMjAiIGN5PSIxNjAiIHI9IjgiIGZpbGw9IiNmZmZmZmYiLz4KPGNpcmNsZSBjeD0iMjkyIiBjeT0iMTYwIiByPSI4IiBmaWxsPSIjZmZmZmZmIi8+CjxyZWN0IHg9IjIyNiIgeT0iMzMwIiB3aWR0aD0iNjAiIGhlaWdodD0iNDAiIHJ4PSI4IiBmaWxsPSIjMDUwNTA1IiBzdHJva2U9IiM0ZWNkYzQiIHN0cm9rZS13aWR0aD0iMyIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgo8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMGQ0ZmYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNGVjZGM0Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ],
+    "categories": ["portfolio", "engineering", "robotics", "medical"],
+    "lang": "en-US",
+    "dir": "ltr"
+}
