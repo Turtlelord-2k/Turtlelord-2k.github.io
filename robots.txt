@@ -1,15 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://turtlelord-2k.github.io/sitemap.xml
-
-# Allow search engines to crawl all content
-Allow: /index.html
-Allow: /style.css
-Allow: /script.js
-Allow: /manifest.json
-Allow: /Bhushan_Ravikumar_Resume_MD.pdf
-
-# Disallow service worker from being crawled
-Disallow: /sw.js
