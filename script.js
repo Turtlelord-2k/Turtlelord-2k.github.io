@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const cursorSpan = document.querySelector('.cursor');
 
     const textArray = [
-        'Systems Engineer',
-        'Robotics Specialist',
-        'Medical Device Expert',
-        'Innovation Pioneer',
-        'Technology Enthusiast'
+        'Medical Systems Engineer',
+        'IoT Healthcare Specialist',
+        'Contrast Delivery Expert',
+        'Ambient Intelligence Developer',
+        'V&V Testing Professional'
     ];
     
     const typingDelay = 100;
@@ -216,26 +216,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     createFloatingParticles();
 
-    // Interactive robot eyes
-    const leftEye = document.querySelector('.left-eye');
-    const rightEye = document.querySelector('.right-eye');
+    // Interactive medical system display
+    const medicalDisplay = document.querySelector('.screen-display');
     
-    if (leftEye && rightEye) {
+    if (medicalDisplay) {
         document.addEventListener('mousemove', (e) => {
-            const robot = document.querySelector('.robot-head');
-            if (robot) {
-                const rect = robot.getBoundingClientRect();
-                const robotCenterX = rect.left + rect.width / 2;
-                const robotCenterY = rect.top + rect.height / 2;
+            const system = document.querySelector('.system-monitor');
+            if (system) {
+                const rect = system.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
                 
-                const angle = Math.atan2(e.clientY - robotCenterY, e.clientX - robotCenterX);
-                const distance = Math.min(5, Math.sqrt(Math.pow(e.clientX - robotCenterX, 2) + Math.pow(e.clientY - robotCenterY, 2)) / 50);
+                const distance = Math.sqrt(Math.pow(e.clientX - centerX, 2) + Math.pow(e.clientY - centerY, 2));
+                const intensity = Math.min(1, distance / 200);
                 
-                const eyeX = Math.cos(angle) * distance;
-                const eyeY = Math.sin(angle) * distance;
-                
-                leftEye.style.transform = `translate(${eyeX}px, ${eyeY}px)`;
-                rightEye.style.transform = `translate(${eyeX}px, ${eyeY}px)`;
+                // Update heartbeat speed based on mouse proximity
+                const heartbeatTrace = document.querySelector('.heartbeat-trace::after');
+                if (heartbeatTrace) {
+                    const speed = 1.5 - (intensity * 0.5); // Faster when mouse is closer
+                    medicalDisplay.style.setProperty('--heartbeat-speed', `${speed}s`);
+                }
             }
         });
     }
@@ -324,35 +324,55 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     animateCircuitPattern();
 
-    // Medical device heartbeat simulation
-    function simulateHeartbeat() {
-        const heartbeatLine = document.querySelector('.heartbeat-line');
-        if (heartbeatLine) {
+    // Contrast delivery system simulation
+    function simulateContrastSystem() {
+        const flowVisualization = document.querySelector('.flow-visualization');
+        const pressureGauge = document.querySelector('.gauge-needle');
+        
+        if (flowVisualization) {
             setInterval(() => {
-                heartbeatLine.style.animation = 'none';
+                flowVisualization.style.animation = 'none';
                 setTimeout(() => {
-                    heartbeatLine.style.animation = 'heartbeatPulse 1.5s infinite';
+                    flowVisualization.style.animation = 'contrastFlow 2s infinite';
                 }, 50);
-            }, 3000);
+            }, 4000);
+        }
+        
+        if (pressureGauge) {
+            setInterval(() => {
+                const randomRotation = 30 + Math.random() * 60; // Random between 30-90 degrees
+                pressureGauge.style.transform = `translate(-50%, -100%) rotate(${randomRotation}deg)`;
+            }, 2000);
         }
     }
-    simulateHeartbeat();
+    simulateContrastSystem();
 
-    // LED indicators random blinking
-    function animateLEDs() {
-        const leds = document.querySelectorAll('.led-indicator:not(.active)');
+    // Control buttons and IoT indicators simulation
+    function animateControlSystems() {
+        const controlButtons = document.querySelectorAll('.control-button:not(.active)');
+        const injectionStatus = document.querySelectorAll('.injection-status:not(.active)');
+        
         setInterval(() => {
-            leds.forEach(led => {
+            controlButtons.forEach(button => {
                 if (Math.random() > 0.7) {
-                    led.classList.add('active');
+                    button.classList.add('active');
                     setTimeout(() => {
-                        led.classList.remove('active');
-                    }, 500);
+                        button.classList.remove('active');
+                    }, 800);
                 }
             });
-        }, 2000);
+            
+            injectionStatus.forEach(status => {
+                if (Math.random() > 0.8) {
+                    status.classList.add('active');
+                    setTimeout(() => {
+                        status.classList.remove('active');
+                    }, 1200);
+                }
+            });
+        }, 2500);
     }
-    animateLEDs();
+    animateControlSystems();
 
     // Glitch effect on hover for name
     const glitchText = document.querySelector('.glitch');
@@ -548,21 +568,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Console message for developers
     console.log(`
-    🤖 Welcome to Bhushan Ravikumar's Portfolio! 🤖
+    🏥 Welcome to Bhushan Ravikumar's Medical Technology Portfolio! 🏥
     
     Built with:
-    - HTML5 & CSS3
+    - HTML5 & CSS3 (Medical Device Themed)
     - Vanilla JavaScript
     - AOS (Animate On Scroll)
-    - Font Awesome Icons
+    - Font Awesome Medical Icons
     - Google Fonts
     
     Features:
+    - Medical System Animations
+    - IoT Sensor Visualizations
+    - Contrast Delivery Simulations
     - Responsive Design
     - Accessibility Features
     - Performance Optimized
-    - Interactive Animations
     - Easter Egg (Try the Konami Code!)
+    
+    Specializing in:
+    - Medical Device Systems Engineering
+    - IoT Healthcare Solutions  
+    - Ambient Intelligence Technology
+    - V&V Testing & Validation
     
     Contact: ravik039@umn.edu
     GitHub: github.com/Turtlelord-2k

@@ -456,128 +456,192 @@ body {
     transform: translateY(-3px);
 }
 
-/* Robot Visual */
+/* Medical System Visual */
 .hero-visual {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.robot-container {
+.medical-system-container {
     position: relative;
-    width: 300px;
+    width: 350px;
     height: 400px;
 }
 
-.robot-figure {
+.contrast-delivery-system {
     position: relative;
     z-index: 2;
 }
 
-.robot-head {
-    width: 120px;
-    height: 120px;
-    background: var(--gradient-primary);
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    position: relative;
-    box-shadow: var(--shadow-glow);
-    animation: robotHover 3s ease-in-out infinite;
-}
-
-.robot-eye {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background: var(--text-primary);
-    border-radius: 50%;
-    top: 40px;
-    animation: eyeGlow 2s infinite alternate;
-}
-
-.left-eye { left: 30px; }
-.right-eye { right: 30px; }
-
-.robot-antenna {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 30px;
-    background: var(--accent-color);
-    border-radius: 2px;
-}
-
-.robot-antenna::after {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 12px;
-    height: 12px;
-    background: var(--medical-green);
-    border-radius: 50%;
-    animation: antennaSignal 1.5s infinite;
-}
-
-.robot-body {
-    width: 150px;
-    height: 200px;
+.system-monitor {
+    width: 280px;
+    height: 180px;
     background: var(--light-bg);
     border: 3px solid var(--primary-color);
-    border-radius: 20px;
-    margin: 0 auto;
+    border-radius: 15px;
+    margin: 0 auto 30px;
     position: relative;
     box-shadow: var(--shadow-glow);
+    animation: systemPulse 3s ease-in-out infinite;
 }
 
-.chest-panel {
+.screen-display {
     position: absolute;
-    top: 30px;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    height: 100px;
+    background: var(--darker-bg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vital-signs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.heartbeat-trace {
+    flex: 1;
+    height: 2px;
+    background: var(--medical-green);
+    position: relative;
+    margin-right: 20px;
+}
+
+.heartbeat-trace::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--medical-green);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: heartbeatTrace 1.5s infinite;
+}
+
+.pressure-reading {
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    color: var(--medical-green);
+    font-weight: 700;
+    animation: pressureFlicker 2s infinite;
+}
+
+.control-interface {
+    position: absolute;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 60px;
-    background: var(--darker-bg);
-    border: 2px solid var(--accent-color);
-    border-radius: 10px;
+    display: flex;
+    gap: 15px;
 }
 
-.chest-panel::after {
+.injection-status,
+.flow-rate-indicator,
+.safety-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+    opacity: 0.3;
+}
+
+.injection-status.active {
+    background: var(--medical-green);
+    opacity: 1;
+    animation: statusBlink 2s infinite;
+}
+
+.safety-indicator.active {
+    background: var(--primary-color);
+    opacity: 1;
+    animation: statusBlink 2.5s infinite;
+}
+
+.iot-sensors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mmwave-sensor {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-medical);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: var(--shadow-medical);
+    animation: sensorScan 4s infinite;
+}
+
+.sensor-waves {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--medical-green);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: waveExpand 3s infinite;
+}
+
+.sensor-waves::before,
+.sensor-waves::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30px;
-    height: 2px;
-    background: var(--medical-green);
-    animation: heartbeat 1.5s infinite;
+    border: 2px solid var(--medical-green);
+    border-radius: 50%;
+    opacity: 0.2;
 }
 
-.arm {
-    position: absolute;
-    width: 40px;
-    height: 100px;
-    background: var(--light-bg);
-    border: 2px solid var(--primary-color);
-    border-radius: 20px;
-    top: 20px;
+.sensor-waves::before {
+    width: 120%;
+    height: 120%;
+    animation: waveExpand 3s infinite 1s;
 }
 
-.left-arm {
-    left: -25px;
-    animation: armMove 4s infinite;
+.sensor-waves::after {
+    width: 140%;
+    height: 140%;
+    animation: waveExpand 3s infinite 2s;
 }
 
-.right-arm {
-    right: -25px;
-    animation: armMove 4s infinite reverse;
+.ambient-nodes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.hologram-effect {
+.node-1,
+.node-2,
+.node-3 {
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    position: relative;
+    animation: nodeActivity 2s infinite;
+}
+
+.node-1 { animation-delay: 0s; }
+.node-2 { animation-delay: 0.7s; }
+.node-3 { animation-delay: 1.4s; }
+
+.data-stream-effect {
     position: absolute;
     top: 0;
     left: 0;
@@ -585,38 +649,65 @@ body {
     height: 100%;
     background: conic-gradient(from 0deg, transparent, var(--primary-color), transparent);
     border-radius: 50%;
-    opacity: 0.1;
-    animation: hologramSpin 10s linear infinite;
+    opacity: 0.05;
+    animation: dataFlow 8s linear infinite;
     z-index: 1;
 }
 
-@keyframes robotHover {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+@keyframes systemPulse {
+    0%, 100% { transform: scale(1); box-shadow: var(--shadow-glow); }
+    50% { transform: scale(1.02); box-shadow: 0 0 30px rgba(0, 212, 255, 0.4); }
 }
 
-@keyframes eyeGlow {
-    0% { box-shadow: 0 0 5px var(--medical-green); }
-    100% { box-shadow: 0 0 15px var(--medical-green); }
+@keyframes heartbeatTrace {
+    0% { left: -20px; transform: scaleY(1); }
+    15% { left: 25%; transform: scaleY(3); }
+    30% { left: 50%; transform: scaleY(0.5); }
+    45% { left: 75%; transform: scaleY(2); }
+    100% { left: calc(100% + 20px); transform: scaleY(1); }
 }
 
-@keyframes antennaSignal {
-    0% { box-shadow: 0 0 5px var(--medical-green); }
-    100% { box-shadow: 0 0 20px var(--medical-green); }
+@keyframes pressureFlicker {
+    0%, 90%, 100% { opacity: 1; }
+    95% { opacity: 0.7; }
 }
 
-@keyframes heartbeat {
-    0%, 100% { width: 30px; opacity: 1; }
-    50% { width: 50px; opacity: 0.7; }
+@keyframes statusBlink {
+    0%, 50% { box-shadow: 0 0 10px currentColor; opacity: 1; }
+    51%, 100% { box-shadow: 0 0 5px currentColor; opacity: 0.8; }
 }
 
-@keyframes armMove {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-15deg); }
-    75% { transform: rotate(15deg); }
+@keyframes sensorScan {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
 }
 
-@keyframes hologramSpin {
+@keyframes waveExpand {
+    0% { 
+        transform: translate(-50%, -50%) scale(0.8); 
+        opacity: 0.7; 
+    }
+    50% { 
+        opacity: 0.3; 
+    }
+    100% { 
+        transform: translate(-50%, -50%) scale(1.2); 
+        opacity: 0; 
+    }
+}
+
+@keyframes nodeActivity {
+    0%, 100% { 
+        transform: scale(1); 
+        box-shadow: 0 0 5px var(--accent-color); 
+    }
+    50% { 
+        transform: scale(1.3); 
+        box-shadow: 0 0 15px var(--accent-color); 
+    }
+}
+
+@keyframes dataFlow {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
@@ -762,95 +853,174 @@ section {
     100% { text-shadow: 0 0 15px var(--primary-color); }
 }
 
-/* Medical Device Animation */
+/* Contrast System Animation */
 .about-visual {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.medical-device-animation {
+.contrast-system-animation {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 240px;
 }
 
-.device-frame {
+.injector-unit {
     width: 100%;
     height: 100%;
     background: var(--darker-bg);
-    border: 3px solid var(--medical-green);
-    border-radius: 15px;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
     padding: 20px;
     position: relative;
-    box-shadow: var(--shadow-medical);
+    box-shadow: var(--shadow-glow);
+    animation: injectorPulse 4s ease-in-out infinite;
 }
 
-.screen {
+.contrast-display {
     width: 100%;
     height: 60%;
     background: var(--dark-bg);
-    border-radius: 10px;
+    border-radius: 12px;
     position: relative;
     overflow: hidden;
+    border: 2px solid var(--accent-color);
 }
 
-.heartbeat-line {
+.flow-visualization {
     position: absolute;
     top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--medical-green);
+    left: 10px;
+    right: 10px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--medical-green), var(--primary-color));
     transform: translateY(-50%);
+    border-radius: 2px;
+    animation: contrastFlow 2s infinite;
 }
 
-.heartbeat-line::after {
-    content: '';
+.pressure-gauge {
     position: absolute;
-    top: -10px;
-    left: 0;
-    width: 20px;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    background: var(--darker-bg);
+}
+
+.gauge-needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
     height: 20px;
     background: var(--medical-green);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    animation: heartbeatPulse 1.5s infinite;
+    transform-origin: bottom center;
+    transform: translate(-50%, -100%) rotate(45deg);
+    animation: pressureGauge 3s ease-in-out infinite;
 }
 
-@keyframes heartbeatPulse {
-    0% { left: -20px; }
-    15% { left: 25%; transform: scaleY(3); }
-    30% { left: 50%; transform: scaleY(0.5); }
-    45% { left: 75%; transform: scaleY(2); }
-    100% { left: calc(100% + 20px); transform: scaleY(1); }
-}
-
-.control-panel {
+.system-controls {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
-.led-indicator {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+.control-button {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
     background: var(--text-secondary);
     opacity: 0.3;
+    transition: all 0.3s ease;
 }
 
-.led-indicator.active {
+.control-button.active {
     background: var(--medical-green);
     opacity: 1;
-    animation: ledBlink 2s infinite;
+    animation: controlActive 2.5s infinite;
 }
 
-@keyframes ledBlink {
-    0%, 50% { box-shadow: 0 0 10px var(--medical-green); }
-    51%, 100% { box-shadow: 0 0 5px var(--medical-green); }
+.iot-connectivity {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wifi-signal {
+    width: 20px;
+    height: 15px;
+    background: linear-gradient(to top, var(--accent-color) 0%, var(--accent-color) 30%, transparent 30%, transparent 50%, var(--accent-color) 50%, var(--accent-color) 70%, transparent 70%);
+    animation: wifiSignal 2s infinite;
+}
+
+.data-packets {
+    display: flex;
+    gap: 3px;
+}
+
+.data-packets::before,
+.data-packets::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    animation: dataTransmit 1.5s infinite;
+}
+
+.data-packets::after {
+    animation-delay: 0.5s;
+}
+
+@keyframes injectorPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes contrastFlow {
+    0% { 
+        background: linear-gradient(90deg, var(--primary-color), var(--medical-green), var(--primary-color));
+        transform: translateY(-50%) translateX(0);
+    }
+    50% { 
+        background: linear-gradient(90deg, var(--medical-green), var(--primary-color), var(--medical-green));
+        transform: translateY(-50%) translateX(5px);
+    }
+    100% { 
+        background: linear-gradient(90deg, var(--primary-color), var(--medical-green), var(--primary-color));
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+@keyframes pressureGauge {
+    0%, 100% { transform: translate(-50%, -100%) rotate(30deg); }
+    50% { transform: translate(-50%, -100%) rotate(60deg); }
+}
+
+@keyframes controlActive {
+    0%, 50%, 100% { box-shadow: 0 0 8px var(--medical-green); }
+    25%, 75% { box-shadow: 0 0 15px var(--medical-green); }
+}
+
+@keyframes wifiSignal {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+@keyframes dataTransmit {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 /* Experience Timeline */
@@ -1562,19 +1732,24 @@ section {
         font-size: 0.9rem;
     }
     
-    .robot-container {
+    .medical-system-container {
+        width: 250px;
+        height: 300px;
+    }
+    
+    .system-monitor {
         width: 200px;
-        height: 250px;
+        height: 140px;
     }
     
-    .robot-head {
-        width: 80px;
-        height: 80px;
+    .mmwave-sensor {
+        width: 60px;
+        height: 60px;
     }
     
-    .robot-body {
-        width: 100px;
-        height: 130px;
+    .contrast-system-animation {
+        width: 250px;
+        height: 180px;
     }
     
     .bio-card,
